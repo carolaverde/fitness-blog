@@ -6,41 +6,86 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.encabezado{
-    display: flex;
-    justify-content: center;
+header{
+    width: 100%;
+    background: #020202;
+   
     
 }
 
-.encabezado h1{
-    font-size: 3em;
-    color: #ea6a05;
+.fatherHeader{
+  display: flex; 
+  justify-content: space-between;
+    
+}
+.wrapper{ /*con esta clase se centra todo el contenido de la pagina va a tener un ancho y un ancho maximo y un margin auto para centrarlo*/
+   max-width: 1000px;
+   margin: auto;
+ 
+   
+}
+  
+
+.imglogo{
+    width: 300px;
+    height: 150px;
+    line-height: 100px;/*buscar para que sirve line-height*/
 }
 
-.menu{
-    background: #ea6a05;
+
+header nav{
     width: 100%;
-    height: 30%;
-    box-shadow: 0px 0px 10px #a05e2a;
-    margin-top: 2%;
-    margin-bottom: 4%;
-    border-bottom-style: solid;
-    border-bottom-color: #585858;
-    border-bottom-width: 5%;
-    font-size: 2em;
+    height: 30%;    
+    margin-top: 2%; 
+    font-size: 1em;
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
-    text-decoration: none;
-}
+    line-height: 100px;
+}  
 
-.liclass{
+header nav a{
+    display: inline-block;
     text-decoration: none;
     color: white;
+    padding: 10px  20px;
+    /*line-height: normal;*/
+    font-size: 20px;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 1s;
+    /*transition-delay:retraso que tendra el efecto se da en segundos;
+    transition-property: es la declaración o propiedad de estilo que se va a afectar en la transición;
+    transition-duration: es el tiempo total que tardara la transición;
+    transition-timing-function: es la velocidad del efecto que se aplicara, linear, ease-out, ease-in,ease-in-out;*/
+
 }
 
+header nav a:hover{
+    background: #f7941d;
+           
+}
+.contenedorPhotomain{
+    margin-top: auto;
+    background: black;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content:center ;
+    
+}
 
+.img-principal{
+width: 100%;
+height: 100%;
+flex-direction: column;
+}
 
-
+h2{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.contenido {
+    padding: 5%;
+}
 
 
