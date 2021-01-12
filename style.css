@@ -1,53 +1,59 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header{
-    width: 100%;
+header {
+    width: 100vw;
     background: #020202;
-   
-    
+
+
 }
 
-.fatherHeader{
-  display: flex; 
-  justify-content: space-between;
-    
-}
-.wrapper{ /*con esta clase se centra todo el contenido de la pagina va a tener un ancho y un ancho maximo y un margin auto para centrarlo*/
-   max-width: 1000px;
-   margin: auto;
- 
-   
-}
-  
+.fatherHeader {
+    display: flex;
+    justify-content: space-between;
 
-.imglogo{
+}
+
+.wrapper {
+    /*con esta clase se centra todo el contenido de la pagina va a tener un ancho y un ancho maximo y un margin auto para centrarlo*/
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+
+
+}
+
+
+.imglogo {
     width: 300px;
     height: 150px;
-    line-height: 100px;/*buscar para que sirve line-height*/
+    line-height: 100px;
+    /*buscar para que sirve line-height*/
 }
 
 
-header nav{
-    width: 100%;
-    height: 30%;    
-    margin-top: 2%; 
+header nav {
+    width: 100vw;
+    height: 30%;
+    margin-top: 2%;
     font-size: 1em;
     display: flex;
     justify-content: space-around;
     line-height: 100px;
-}  
+}
 
-header nav a{
+header nav a {
     display: inline-block;
     text-decoration: none;
     color: white;
-    padding: 10px  20px;
+    padding: 10px 20px;
     /*line-height: normal;*/
     font-size: 20px;
     font-weight: bold;
@@ -60,41 +66,120 @@ header nav a{
 
 }
 
-header nav a:hover{
+header nav a:hover {
     background: #f7941d;
-           
+
 }
-.contenedorPhotomain{
+
+.contenedorPhotomain {
     margin-top: auto;
     background: black;
     width: 100%;
     height: 500px;
     display: flex;
-    justify-content:center ;
-    
+    justify-content: center;
+
 }
 
-.img-principal{
-width: 100%;
-height: 100%;
-flex-direction: column;
+.img-principal {
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
 }
 
-h2{
+.img_somos {
+    width: 450px;
+    padding-right: 5%;
+
+}
+
+.quienes-somos {
+    flex-direction: column;
+}
+
+h2 {
     text-align: center;
     padding-bottom: 5%;
 }
+
 .contenido {
     padding: 5%;
 }
 
-.exercises{
+.exercises {
     width: 100%;
-    height: 200px;
-    background:#f7941d;
+    height: 450px;
+    background: #f7941d;
+
+
 }
 
-.backgroundBlack{
-   color : white;
-   padding:5%;
+.backgroundBlack {
+    color: white;
+    padding: 3%;
+}
+
+.conteiner-video {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-video {
+    width: 250px;
+    height: 160px;
+
+}
+
+.form-one{
+    height: 800px;
+    background-image:url(imagenes/form.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed; /*para que la imagen quede fija*/
+}
+
+.container-form{
+padding-top: 10%;
+
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(250, 250, 250, 0.4);
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 7px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#send{
+    background: #f7941d;
+    padding: 20px;
+    color: white;
+
+}
+
+#send:hover{
+    background: rgb(231, 229, 229);
+    color: #f7941d;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
 }

@@ -11,10 +11,10 @@
 <body>
   <header>
     <div class="fatherHeader">
-        <div class="wrapper">
-          <a href="index.html"><img src="imagenes/logo.png" class="imglogo" alt="logo"></a>
-        </div>
-    
+      <div class="wrapper">
+        <a href="index.html"><img src="imagenes/logo.png" class="imglogo" alt="logo"></a>
+      </div>
+
       <nav>
         <a href="index.html">Home</a>
         <a href="#">Quienes Somos</a>
@@ -26,10 +26,12 @@
   </header>
 
   <main class="principal"></main>
-    <section class= "contenedorPhotomain">
-      <img src="imagenes/header-pesas.jpg" class="img-principal" alt="imagen-header">
-    </section>
-    <section class="contenido wrapper">
+  <section class="contenedorPhotomain">
+    <img src="imagenes/header-pesas.jpg" class="img-principal" alt="imagen-header">
+  </section>
+  <section class="contenido wrapper contenedor-somos">
+    <img src="imagenes/img-somos.jpg" class="img_somos" alt="img hombre-mujer">
+    <div class="quienes-somos">
       <h2>Quiénes Somos</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, asperiores officiis ratione tempora a aliquam
         placeat non amet corrupti, magnam distinctio! Dolores odio ut minima velit perspiciatis, error asperiores
@@ -38,16 +40,38 @@
         repudiandae, nisi, quisquam incidunt voluptatibus animi maiores possimus rem earum nam? Obcaecati, ipsum!
         Temporibus, obcaecati.
       </p>
-    </section>
-    <section class="exercises">
-      <h2 class="backgroundBlack">Ejercicios</h2>
-      
-    </section>
+    </div>
+  </section>
+  <section class="exercises">
+    <h2 class="backgroundBlack">Ejercicios</h2>
+    <div class="conteiner-video">
+      <a href="https://youtu.be/MY_gyv3ZDLE" target="_blank"><img src="imagenes/img-video1.jpg" alt="imagenvideo"
+          class="img-video"></a>
+      <a href="https://youtu.be/ajHuc8vshZo" target="_blank"><img src="imagenes/img-video2.jpg" alt="imagenvideo"
+          class="img-video"></a>
+      <a href="https://youtu.be/2_AjFVSbYEg" target="_blank"><img src="imagenes/img-video4.jpg" alt="imagenvideo"
+          class="img-video"></a>
+      <a href="https://youtu.be/c-eRap3wSbc" target="_blank"><img src="imagenes/img-video3.jpg" alt="imagenvideo"
+          class="img-video"></a>
+    </div>
+  </section>
+  <section class="form-one">
+    <div class="container-form">
+      <form action="">
+        <h2>CONTACTO</h2>
+        <input type="text" name="Nombre" placeholder="Nombre y Apellido">
+        <input type="text" name="email" placeholder="Correo">
+        <input type="number" name="telefono" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+        <input type="button" value="Enviar" id="send">
+      </form>
+    </div>
+
+
+  </section>
   </main>
   <footer>
-    <h4>Más sobre Nutrición</h4>
-    <h4>Más sobre Descanso</h4>
-    <h4>Más sobre Ejercicio</h4>
+
     <h6>copyrigth@2020</h6>
   </footer>
 </body>
